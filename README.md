@@ -6,7 +6,7 @@ This has been tested on the following versions of Worms Armageddon
  - 3.7.2.2 (Steam)
 
 ## Install
-[Download the latest version](https://github.com/Carlmundo/#)
+[Download the latest version](https://github.com/Carlmundo/WA-Plus/releases/latest)
 
 ## Features
 

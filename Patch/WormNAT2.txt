@@ -1,0 +1,49 @@
+WormNAT2: A Worms Armageddon hosting proxy module
+
+
+Description
+-----------
+
+WormNAT2 hooks up W:A with a reverse proxy. Essentially,
+it hosts games on the proxy server, and the proxy routes
+data between the joining players and the host. The proxy
+itself is currently hosted on a dedicated server in Paris,
+France.
+
+The preferred way of hosting game is to make your PC
+connectable from the Internet. You can find a detailed
+guide on how to set up hosting here:
+
+http://worms2d.info/Hosting
+
+
+Installation
+------------
+
+1. Unzip madCHook.dll and wkWormNAT2.dll to your W:A
+   installation directory.
+   
+   For the Steam edition, this is usually:
+   "C:\Program Files (x86)\Steam\steamapps\common\Worms Armageddon"
+
+   For the CD edition, it is usually:
+   "C:\Microprose\Worms Armageddon"
+   or
+   "C:\Team17\Worms Armageddon"
+
+2. Start the game, open the Options screen, click
+   "Advanced", and make sure "Load Wormkit modules"
+   is checked.
+
+
+Compatibility
+-------------
+
+This module should be compatible with all editions and
+versions of Worms Armageddon since v3.6.28.0 (released
+2007-06-29).
+
+Note that if you use a Snooper program to host games,
+this module may or may not be compatible with your
+Snooper software. Please refer to your Snooper software
+documentation/author for compatibility information.

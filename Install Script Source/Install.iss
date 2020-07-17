@@ -1,5 +1,5 @@
 #define AppName "Worms Armageddon Plus"
-#define AppVersion "1.0"
+#define AppVersion "1.1"
 #define AppProcess "WA.exe"
 #define Game "Worms Armageddon"
 #define RegPath "Software\Team17SoftwareLTD\WormsArmageddon"
@@ -21,15 +21,20 @@ SetupIconFile=image-icon.ico
 WizardImageFile=image-large.bmp
 WizardImageStretch=no
 WizardSmallImageFile=image-small.bmp
-;SetupLogging=yes
 Compression=lzma
 SolidCompression=yes
 Uninstallable=no
 PrivilegesRequired=admin
 
+[InstallDelete]
+;Remove obsolete modules from 1.0
+Type: files; Name: "{app}\wkD3D9Wnd.dll"
+Type: files; Name: "{app}\wkD3D9Wnd.ini"
+Type: files; Name: "{app}\wkD3D9Wnd_readme.txt"
+
 [Files]
 ;Backup Teams file
-Source: "{app}\User\Teams\WG.WGT"; DestDir: "{app}\User\Teams\"; DestName: "WG.WGT.backup"; Flags: external skipifsourcedoesntexist
+Source: "{app}\User\Teams\WG.WGT"; DestDir: "{app}\User\Teams\"; DestName: "Backup before WA-Plus 1.1 WG.WGT"; Flags: external skipifsourcedoesntexist
 ;Patch files
 Source: "..\Patch\*"; DestDir: "{app}\"; Flags: ignoreversion recursesubdirs createallsubdirs;
 ;VC Redist 2015-2019
@@ -44,6 +49,7 @@ Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "LoadWorm
 Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "SkipIntro"; ValueData: 1
 Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "Vsync"; ValueData: 0
 Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "AssistedVsync"; ValueData: 0
+Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "WindowedMode"; ValueData: 1
 
 [Code]
 function IsAppRunning(const FileName: string): Boolean;

@@ -2,8 +2,7 @@
 An easy to install patch to modernise the game and unlock more content.
 
 This has been tested on the following versions of Worms Armageddon
- - 3.7.2.1 (GOG)
- - 3.7.2.2 (Steam)
+ - 3.8 (Steam, CD version)
 
 ## Install
 [Download the latest version](https://github.com/Carlmundo/WA-Plus/releases/latest)
@@ -11,7 +10,6 @@ This has been tested on the following versions of Worms Armageddon
 ## Features
 
 ### Mods
- - Borderless windowed mode (via [D3D9Wnd](https://worms2d.info/D3D9Wnd))
  - Higher resolution menus (via [SuperFrontendHD](https://worms2d.info/SuperFrontendHD))
  - Host without port forwarding (via [WormNAT2](https://worms2d.info/WormNAT2))
 
@@ -32,7 +30,7 @@ This prevents issues with the game crashing, switching windows and hosting games
  	- Banana Bombs can now become Super Banana Bombs 
  	- Super Sheep can now become Aqua Sheep
 
-These features could also be unlocked by achieving progress and gold medals in single player. The patch will backup your existing "Teams" file (\User\Teams\WG.WGT) and use a new file in order to unlock the content.
+These features could also be unlocked by achieving progress and gold medals in single player. The patch will backup your existing "Teams" file (\User\Teams\WG.WGT) and use a new file in order to unlock the content. You can find your backup in the \User\Teams folder.
 
 ### Additional Maps from Worms World Party
 Adds the following maps that were selectable in the semi-sequel:
@@ -76,3 +74,4 @@ These can be set in the game menu but will automatically apply when installed.
  - Direct3D 9 shader palette
  - Skip Intros
  - Disabled vertical sync & assisted vertical sync
+ - Windowed mode

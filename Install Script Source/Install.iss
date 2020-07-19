@@ -1,5 +1,5 @@
 #define AppName "Worms Armageddon Plus"
-#define AppVersion "1.1"
+#define AppVersion "1.1.1"
 #define AppProcess "WA.exe"
 #define Game "Worms Armageddon"
 #define RegPath "Software\Team17SoftwareLTD\WormsArmageddon"
@@ -25,6 +25,7 @@ Compression=lzma
 SolidCompression=yes
 Uninstallable=no
 PrivilegesRequired=admin
+UsedUserAreasWarning=no
 
 [InstallDelete]
 ;Remove obsolete modules from 1.0
@@ -33,8 +34,6 @@ Type: files; Name: "{app}\wkD3D9Wnd.ini"
 Type: files; Name: "{app}\wkD3D9Wnd_readme.txt"
 
 [Files]
-;Backup Teams file
-Source: "{app}\User\Teams\WG.WGT"; DestDir: "{app}\User\Teams\"; DestName: "Backup before WA-Plus 1.1 WG.WGT"; Flags: external skipifsourcedoesntexist
 ;Patch files
 Source: "..\Patch\*"; DestDir: "{app}\"; Flags: ignoreversion recursesubdirs createallsubdirs;
 ;VC Redist 2015-2019
@@ -50,6 +49,7 @@ Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "SkipIntr
 Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "Vsync"; ValueData: 0
 Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "AssistedVsync"; ValueData: 0
 Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "WindowedMode"; ValueData: 1
+Root: HKCU; Subkey: "{#RegPath}\Options"; ValueType: dword; ValueName: "LocalProgressOverride"; ValueData: 1878586903
 
 [Code]
 function IsAppRunning(const FileName: string): Boolean;
@@ -99,7 +99,7 @@ begin
   end
   else if RegQueryStringValue(HKLM64, GOG_Path, 'PATH', InstalledDir) then
   begin
-  end    
+  end;    
   Result := InstalledDir;    
 end;
 

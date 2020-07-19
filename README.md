@@ -31,7 +31,7 @@ This prevents issues with the game crashing, switching windows and hosting games
  	- Super Sheep can now become Aqua Sheep
  - Extended / RubberWorm options (click the star icon next to the game options button)
 
-These features could also be unlocked by achieving progress and gold medals in single player. The patch will backup your existing "Teams" file (\User\Teams\WG.WGT) and use a new file in order to unlock the content. You can find your backup in the \User\Teams folder.
+These features could also be unlocked by achieving progress and gold medals in single player.
 
 ### Additional Maps from Worms World Party
 Adds the following maps that were selectable in the semi-sequel:

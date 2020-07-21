@@ -1,5 +1,5 @@
 # Worms Armageddon Plus
-An easy to install patch to modernise the game and unlock more content.
+An easy-to-install patch to modernise the game and unlock more content.
 
 This has been tested on the following versions of Worms Armageddon
  - 3.8 (Steam, CD version)

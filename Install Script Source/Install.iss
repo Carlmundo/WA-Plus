@@ -107,7 +107,7 @@ function NextButtonClick(PageId: Integer): Boolean;
 begin
     Result := True;
     if (PageId = wpSelectDir) and (
-    not FileExists(ExpandConstant('{app}\WA.exe'))
+    not FileExists(ExpandConstant('{app}\{#AppProcess}'))
     ) then
     begin
         MsgBox('{#Game} could not be found in that folder. If it is the correct folder, please try reinstalling the game.', mbError, MB_OK);

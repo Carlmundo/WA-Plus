@@ -4,7 +4,7 @@ An easy-to-install patch to modernise the game and unlock more content.
 This has been tested on the following versions of Worms Armageddon
  3.8 (Steam, CD version, GOG*)
  
-*GOG users should use the updater [here](https://github.com/Carlmundo/WA-Plus/releases/download/1.1/WA-GOG-Updater-3.8.exe) before installing the patch.
+*GOG users should use the updater [here](https://worms2d.info/files/WA_update-3.8_[GOG]_Installer.exe) before installing the patch.
 
 
 ## Install

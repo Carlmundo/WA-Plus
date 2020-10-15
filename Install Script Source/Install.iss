@@ -1,5 +1,5 @@
 #define AppName "Worms Armageddon Plus"
-#define AppVersion "1.1.1"
+#define AppVersion "1.1.2"
 #define AppProcess "WA.exe"
 #define Game "Worms Armageddon"
 #define RegPath "Software\Team17SoftwareLTD\WormsArmageddon"
@@ -25,7 +25,6 @@ Compression=lzma
 SolidCompression=yes
 Uninstallable=no
 PrivilegesRequired=admin
-UsedUserAreasWarning=no
 
 [InstallDelete]
 ;Remove obsolete modules from 1.0

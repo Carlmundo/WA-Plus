@@ -60,7 +60,7 @@ To use these maps when creating a game:
 Adds soundbanks from other classic Worms releases:
  - Worms: The Directors Cut, named as "Classic - Director's Cut"
  - Worms 2: Danish & Rednecks
- - Worms World Party: Danish-2, Dutch-2, French-2, Italian-2, Spanish-2, Swedish-2
+ - Worms World Party: Danish-2, Dutch-2, French-2, Italian-2, Spanish-2, Swedish-2, Polish-2 (Poland CD exclusive)
  
 ### Restored Content
 Some content was removed from the digital release and has been restored with this patch.

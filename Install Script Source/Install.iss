@@ -1,5 +1,5 @@
 #define AppName "Worms Armageddon Plus"
-#define AppVersion "1.1.3"
+#define AppVersion "1.1.4"
 #define AppProcess "WA.exe"
 #define Game "Worms Armageddon"
 #define RegPath "Software\Team17SoftwareLTD\WormsArmageddon"
